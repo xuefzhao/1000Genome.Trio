@@ -20,7 +20,12 @@ SV.Merge.Multi.Sample.py vcf --workdir /scratch/remills_flux/xuefzhao/SV_discove
 SV.Merge.Multi.Sample.py svelter --workdir /scratch/remills_flux/xuefzhao/SV_discovery_index/download/SVelter.CommonBPs
 ```
 
-
+#To add validation score to merged vcf files
+```
+SV.PacVal.file.filter.py --input /scratch/remills_flux/xuefzhao/SV_discovery_index/download/SVelter.CommonBPs/Common.SVs.samples.minus.0.PacVal --score-cff 0.2 --PB-score-pos 11
+SV.PacVal.file.filter.py --input /scratch/remills_flux/xuefzhao/SV_discovery_index/download/SVelter.CommonBPs/Common.SVs.samples.minus.1.PacVal --score-cff 0.2 --PB-score-pos 11
+SV.PacVal.file.filter.py --input /scratch/remills_flux/xuefzhao/SV_discovery_index/download/SVelter.CommonBPs/Common.SVs.samples.minus.2.PacVal --score-cff 0.2 --PB-score-pos 11
+```
 
 
 
